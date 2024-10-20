@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from .terrain import generate_reference_and_limits
 import pandas as pd
-from .controller import PIDcontroller
+from .controller import PDcontroller
 
 
 class Submarine:
@@ -99,7 +99,7 @@ class Mission:
 
 
 class ClosedLoop:
-    def __init__(self, plant: Submarine, controller: PIDcontroller):
+    def __init__(self, plant: Submarine, controller: PDcontroller):
         self.plant = plant
         self.controller = controller
 

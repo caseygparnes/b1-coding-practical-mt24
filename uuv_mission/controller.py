@@ -1,4 +1,4 @@
-class PIDcontroller:
+class PDcontroller:
     def __init__(self, KP=0.15, KD=0.6):
         self.KP = KP
         self.KD = KD
